@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hàm hiển thị nội dung trên nhiều dòng</h1>
+    <script>
+        sendMail("Alice", "Acme Corp");
+        function sendMail(name, companyName){
+            const emailBody =`
+            Dear ${name},
+
+            Thank you for purchasing our product. we hope you enjoy it.
+
+            Best regards,
+            
+            ${companyName}
+            `;
+            console.log(emailBody);
+            return emailBody;
+        };
+    </script>
+</body>
+</html>

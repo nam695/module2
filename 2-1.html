@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hàm kiểm tra số chẵn, lẻ </h1>
+    <script>
+        const checkNumber = (n) => {
+            if ( typeof n !== `number`) {
+                return `${n} not it number`
+            }
+            return n % 2 === 0 ? `${n} is an even number` : `${n} is odd`;
+        };
+        console.log(checkNumber("a"));
+        console.log(checkNumber(10));
+        console.log(checkNumber(7));
+    </script>
+</body>
+</html>
