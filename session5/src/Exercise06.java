@@ -31,9 +31,8 @@ public class Exercise06 {
         boolean hasDigit = false;
         boolean hasSpecialChar = false;
 
-        String specialCharacters = "@#$%!"; // Bạn có thể thêm các ký tự khác nếu muốn
+        String specialCharacters = "@#$%!"; 
 
-        // Duyệt qua từng ký tự trong mật khẩu để kiểm tra các tiêu chí còn lại
         for (char ch : password.toCharArray()) {
             if (Character.isUpperCase(ch)) {
                 hasUppercase = true;
