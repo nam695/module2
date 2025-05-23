@@ -31,8 +31,8 @@ public class Exercise05 {
         System.out.println("Thời gian thực hiện với StringBuffer: " + (endTimeStringBuffer - startTimeStringBuffer) + " ms");
 
         System.out.println("\nNhận xét:");
-        System.out.println("- String: Việc nối chuỗi bằng toán tử '+' tạo ra các đối tượng String mới trong mỗi lần lặp, dẫn đến hiệu suất rất kém và tốn nhiều bộ nhớ khi số lượng phép nối lớn.");
-        System.out.println("- StringBuilder: Nhanh nhất trong ba loại vì nó không được đồng bộ hóa. Thích hợp cho các trường hợp chỉ có một luồng thực hiện việc nối chuỗi.");
-        System.out.println("- StringBuffer: Chậm hơn StringBuilder một chút vì nó được đồng bộ hóa (thread-safe), có nghĩa là nó an toàn khi sử dụng trong môi trường đa luồng. Thích hợp khi nhiều luồng cùng thực hiện việc nối chuỗi.");
+        System.out.println("- String: Không hiệu quả cho phép nối chuỗi nhiều lần do tạo ra nhiều đối tượng mới.");
+        System.out.println("- StringBuilder:: Hiệu quả và nhanh chóng, thích hợp cho nhiều thao tác nối chuỗi trong một luồng.");
+        System.out.println("- StringBuffer: : Tương tự như StringBuilder nhưng an toàn với đa luồng, có thể chậm hơn một chút do đồng bộ hóa.");
     }
 }
